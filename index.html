@@ -1,36 +1,87 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
-
-<!-- TODO 2: Add Your previous projects' HTML into the public folder -->
-
-<!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
-
-<!-- TODO 4: Add titles/subtitles etc. -->
-
-<!-- TODO 5: Add a link to the project pages -->
-
-<!-- TODO 6: Add images to show the project previews
-HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
-https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
-
-<!-- TODO 7: Add the Contact Me and About Me page links -->
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Amos Website</title>
-    </head>
-    <body>
-        <h1>Amos Wu's Portfolio</h1>
-        <h2>Trying to be a web developer</h2>
-        <hr/>
-        <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-        <h3><img src="./assets/images/movie-ranking.png" height="250"/></h3>
-        <h3><a href="./public/birthday-invite.html" >Birthday Invite Project</a></h3>
-        <h3><img src="./assets/images/birthday-invite.png" height="400"/></h3>
-        <hr/>
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact Me</a>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <title>Amos Wu</title>
+</head>
+<body>
+    <secton id="hero">
+        <!-- a background with h1 and h2 also  -->
+         <div class="first-container">
+            <div class="caveat">
+                <img id = "surf-board" src="./images/surf-board.png" alt="surf board" height="100" width ="100">
+                <img id = "cloud" src="./images/cloud.png" alt="cloud" height="100" width ="100">
+                <h1>Welcome to my page</h1>
+                <h2>I am learning full-stack development </h2>
+            </div>
+         </div>
+    </secton>
+
+    <secton id="resume">
+        <!-- button link to resume page -->
+         <div class="second-container">
+            <div class="item montserrat">
+            <h2> If you are interested in my background.</h2>
+            <h2> Click ↓</h2>
+            <a href="https://amoschiwu.github.io/html-capstone-project/"><button>Resume</button></a>
+         </div>
+         </div>
+    </secton>
+
+    <secton id="project">
+        <!-- 橫向的三個專案grid -->
+        <div class="third-container">
+            <div class="introduction">
+                <h2>Explore Taiwan</h2>
+            </div>
+            <div class="project1">
+                <img src="./images/taipei101.jpeg" alt="Taipei 101" height="500">
+                <p><span class="special-text">Taipei 101 </span>is one of the most iconic landmarks in Taiwan, located in the Xinyi District of Taipei. Completed in 2004, it was once the tallest building in the world, standing at a height of 508 meters. Taipei 101 is renowned for its unique design, which combines modern architecture with traditional Asian elements. The skyscraper houses offices, retail spaces, and an observation deck offering breathtaking views of the city. It also features a massive tuned mass damper, which helps stabilize the building against strong winds and earthquakes. Taipei 101 is not only a symbol of Taiwan's economic growth but also a must-visit destination for tourists from around the globe.</p>
+            </div>
+            <div class="project2">
+                <img src="./images/island.jpg" alt="island" height="320" width="400">
+                <p><span class="special-text">Guishan Island</span>, also known as Turtle Island, is a small volcanic island off the coast of Yilan County in northeastern Taiwan. Named for its unique turtle-like shape, the island is a popular destination known for its rugged landscapes, volcanic hot springs, and diverse marine life. Guishan Island is a protected area, and access is limited to preserve its natural beauty and ecosystem. Visitors can take guided boat tours around the island to enjoy scenic views, observe dolphins and whales, and even witness volcanic steam vents in action. This iconic island holds cultural significance as well, with ancient legends linking it to Taiwanese folklore and myths.</p>
+            </div>
+            <div class="project3">
+                <img src="./images/boat.jpg" alt="boat" height="320" width="410">
+                <p><span class="special-text">The Tao</span>, also known as the Yami, are an Indigenous group native to Lanyu (Orchid Island), located off the southeastern coast of Taiwan. With a population of about 4,000, the Tao are distinct from other Taiwanese Indigenous groups, sharing cultural and linguistic roots with the Batanes Islands in the Philippines. The Tao people are renowned for their seafaring traditions and their unique craftsmanship in building "tatala" fishing boats, beautifully decorated and symbolizing both artistic skill and cultural heritage. 
+                    Fishing, especially flying fish, is central to Tao life, and the Tao observe seasonal customs that honor the cycles of fishing and agriculture. Their spiritual beliefs are closely tied to nature, with reverence for the ocean and respect for ancestral spirits. 
+                    The Tao continue to uphold their traditions in the face of modern challenges, and their culture remains an essential part of Taiwan's diverse cultural landscape.</p>
+            </div>
+        </div>
+    </secton>
+
+    <secton id="interest">
+        <!-- 直向的三個專案flexbox -->
+         <div class="forth-container">
+            <h2>My interest</h2>
+         </div>
+         <div class="fifth-container">
+            <div class="item">
+                <img src="./images/turtle.jpg" alt="turtle" height="300">
+                <p>I love diving.</p>
+            </div>
+            <div class="item">
+                <img src="./images/programmer.jpg" alt="programmer" height="300">
+                <p>Trying to be a programmer as well!</p>
+            </div>
+         </div>
+    </secton>
+
+    <secton id="contact">
+        <div class="footer">
+            <a>Linkedin</a>
+            <a>Facebook</a>
+            <a>Instagram</a>
+            <p>© Amos Wu</p>
+        </div>
+    </secton>
+
+
+</body>
 </html>
